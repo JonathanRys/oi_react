@@ -13,7 +13,7 @@ class Header extends Component {
 }
 
 class Section extends Component {
-    render() {
+render() {
         return (
             <section className="content-area">
             {
@@ -24,7 +24,7 @@ class Section extends Component {
                     { section.image? <Image { ...section.image } />: null }
                     {
                         section.paragraphs.map((paragraph, key) => {
-                        return <Paragraph key={ `${section.sectionTitle}-${key}` } { ...{paragraph} } />
+                            return <p>{ paragraph}</p>
                         })
                     }
                   </details>
@@ -33,12 +33,6 @@ class Section extends Component {
             }
           </section>
         )
-    }
-}
-
-class Paragraph extends Component {
-    render() {
-        return <p>{ this.props.paragraph }</p>
     }
 }
 

@@ -8,17 +8,6 @@
     src: url(../fonts/OpenSans-Bold.woff);
     font-weight: 700;
 }
-html,
-body{
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-body{
-    margin-top: 75px;
-    overflow-y: scroll;
-}
 .actions{
     float: left;
     width: 15%;
