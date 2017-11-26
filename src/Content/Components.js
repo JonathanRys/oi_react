@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
-import { Collapse } from 'reactstrap';
 
 class Header extends Component {
     render() {
