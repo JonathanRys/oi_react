@@ -35,70 +35,11 @@
 .arrow-left{
     float: left;
 }
-#menu-list{
-    right: 4px;
-    z-index: 999;
-}
-#history-list{
-    left: 4px;
-    z-index: 999;
-}
-#history-icon{
-    color: #444;
-}
-.menu-list{
-    display: none;
-    background-color: #ddd;
-    border: 1px solid black;
-    font-size: 14px;
-    margin: 0;
-    padding: 5px;
-    position: absolute;
-    top: 28px;
-}
-.menu-list li{
-    list-style-type: none;
-    padding: 2px;
-    position: relative;
-    cursor: pointer;
-}
-.menu-item{
-    /**/
-}
-.menu-item:hover{
-    background: #aaa;
-}
 
 .fa{
     cursor: pointer;
 }
-.fa-cutlery{
-    color: green;
-    text-shadow: 1px  1px 0px white,
-                -1px  1px 0px white,
-                 1px -1px 0px white,
-                -1px -1px 0px white;
-}
-.fa-warning{
-    color: orange;
-    text-shadow: 1px  1px 0px white,
-                -1px  1px 0px white,
-                 1px -1px 0px white,
-                -1px -1px 0px white;
-}
-.fa-envira{
-    color: yellowgreen;
-    text-shadow: 1px  1px 0px white,
-                -1px  1px 0px white,
-                 1px -1px 0px white,
-                -1px -1px 0px white;
-}
-#fixed-header-content{
-    left: 0;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
+
 nav{
     background-color: #ccc;
     padding: 5px 8px;
@@ -171,7 +112,7 @@ details p:last-child{
 .article-header{
     background: #7cf;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.38em;
     padding: 10px 3px 5px;
 }
 .common-name{
@@ -221,14 +162,14 @@ article .content-area{
 .scroller{
     overflow-y: scroll;
     max-height: 100%;
-    padding-top: 30px;
-    margin-top: -30px;
+    padding-top: 40px;
+    margin-top: -40px;
 }
 header.side-bar-header{
     background: #ccc;
     border-bottom: 1px solid black;
     border-top-left-radius: inherit;
-    font-size: 12px;
+    font-size: 1em;
     font-weight: bold;
     padding: 5px;
 }
@@ -238,7 +179,7 @@ aside{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: none;
-    height: 80%;
+    height: 75%;
     right: 0;
     width: 20%;
     min-width: 300px;
@@ -255,14 +196,14 @@ figcaption{
     border-bottom: 3px double #aaa;
 }
 .similar-species figcaption{
-    font-size: 10px;
+    font-size: 0.8em;
 }
 .content-area figcaption,
 .similar-species figcaption{
     font-style: italic;
 }
 .similar-species p{
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 0 10px 0;
 
 }
@@ -272,7 +213,7 @@ figcaption{
     border-right: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: bold;
     left: 0;
     margin-left: -20px;
