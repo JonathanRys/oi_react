@@ -62,9 +62,9 @@ class SideBar extends Component {
 
     render() {
         return (
-            <aside className="side-bar" style={ this.state.isOpen? { "right": 0 }: { "right": "-20%" } }>
-                <div onClick={ this.toggle } className="tab">
-                  <FontAwesome name={ this.state.isOpen? "chevron-left": "chevron-right" } />
+            <aside className="side-bar" style={ this.state.isOpen? { "width": "20%" }: { "width": "0%", "minWidth": "0" } }>
+                <div onClick={ this.toggle } className="tab" title={ !this.state.isOpen? this.props.title : null} >
+                  <FontAwesome name={ this.state.isOpen? "chevron-right": "chevron-left" } />
                 </div>
                 <header className="side-bar-header">{ this.props.title }</header>
                 <div className="scroller">
