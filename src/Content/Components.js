@@ -62,7 +62,7 @@ class SideBar extends Component {
 
     render() {
         return (
-            <aside className="side-bar" style={ this.state.isOpen? { "width": "20%" }: { "width": "0%", "minWidth": "0" } }>
+            <aside className="side-bar" style={ this.state.isOpen? { "width": "20%" }: { "width": "0%", "minWidth": "0px" } }>
                 <div onClick={ this.toggle } className="tab" title={ !this.state.isOpen? this.props.title : null} >
                   <FontAwesome name={ this.state.isOpen? "chevron-right": "chevron-left" } />
                 </div>

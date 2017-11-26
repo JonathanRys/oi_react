@@ -284,7 +284,7 @@ figcaption{
 }
 
 /* add transition to details elements */
-details[open] SUMMARY ~ * 
+details[open] summary ~ * 
 {
  animation: sweep .25s ease-in-out;
 }
