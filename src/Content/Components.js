@@ -13,23 +13,23 @@ class Header extends Component {
 }
 
 class Section extends Component {
-render() {
+    render() {
         return (
-            <section className="content-area">
+          <section className="content-area">
             {
-              this.props.sections.map((section, key) => {
+                this.props.sections.map((section, key) => {
                 return (
-                  <details key={ `section-${key}` } className="section-head">
+                    <details key={ `section-${key}` } className="section-head">
                     <summary>{ section.sectionTitle }</summary>
                     { section.image? <Image { ...section.image } />: null }
                     {
                         section.paragraphs.map((paragraph, key) => {
-                            return <p>{ paragraph}</p>
+                            return <p key={ `${section.sectionTitle}-p-${key}` }>{ paragraph}</p>
                         })
                     }
-                  </details>
+                    </details>
                 )
-              })
+                })
             }
           </section>
         )
@@ -68,16 +68,18 @@ class SideBar extends Component {
                 </div>
                 <header className="side-bar-header">{ this.props.title }</header>
                 <div className="scroller">
-                  {
-                    this.props.sections.map((section, key) => {
-                      return (
-                        <section key={ `similar-${key}` } className="similar-species">
-                          <Image { ...section.image } />
-                          <p>{ section.description }</p>
-                        </section>
-                      )
-                    })
-                  }
+                    <div className="sidebar-container">
+                        {
+                            this.props.sections.map((section, key) => {
+                            return (
+                                <section key={ `similar-${key}` } className="similar-species">
+                                <Image { ...section.image } />
+                                <p>{ section.description }</p>
+                                </section>
+                            )
+                            })
+                        }
+                    </div>
                 </div>
             </aside>
         )

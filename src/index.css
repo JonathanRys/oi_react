@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(./fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(./fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+}
 html,
 body{
     font-family: "Open Sans", Arial, sans-serif;

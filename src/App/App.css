@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-}
-@font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/OpenSans-Bold.woff);
-    font-weight: 700;
-}
 .actions{
     float: left;
     width: 15%;
@@ -154,12 +144,26 @@ details p:last-child {
 .section-head{
     /*margin: 20px 40px;*/
     margin: 20px 30px 20px 10px;
+    background-color: #fff;
 }
 .section-head p {
     padding-left: 8px;
     text-indent: 20px;
 }
-
+.section-toggle{
+    background-color: #fff;
+}
+.navbar-light .section-toggle.navbar-toggler {
+    border: none;
+}
+.navbar-light .section-toggle .navbar-toggler-icon {
+    background-image: none;
+    padding-top: 3px;
+}
+.section-toggle .navbar-toggler-icon:after {
+    content: '\f078';
+    font-family: 'FontAwesome';
+}
 .clearfix{
     clear: both;
 }
@@ -209,13 +213,18 @@ article .content-area{
 .side-bar figure>a>img{
     width: 100%;
 }
+.sidebar-container {
+    overflow-y: hidden;
+    position: inherit;
+}
 #similar-image{
     
 }
 .scroller{
     overflow-y: scroll;
-    max-height: 96%;
-
+    max-height: 100%;
+    padding-top: 30px;
+    margin-top: -30px;
 }
 header.side-bar-header{
     background: #ccc;
