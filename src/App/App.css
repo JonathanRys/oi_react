@@ -66,9 +66,6 @@ header h2{
                  1px -1px 0px #eee,
                 -1px -1px 0px #eee;
 }
-details{
-    
-}
 summary{
     background-color: #ddd;
     font-size: large;
@@ -149,21 +146,22 @@ article .content-area{
     transition-timing-function: ease-out;
 }
 .side-bar figure{
-    width: 90%;
+    width: 100%;
     margin: 10px;
 }
 .side-bar figure>a>img{
     width: 100%;
 }
 .sidebar-container{
-    overflow-y: hidden;
-    position: inherit;
+    position: relative;
+    height: 100%;
+    padding-top: 33px;
+    margin-top: -33px;
 }
 .scroller{
     overflow-y: scroll;
     max-height: 100%;
-    padding-top: 40px;
-    margin-top: -40px;
+
 }
 header.side-bar-header{
     background: #ccc;
@@ -180,7 +178,8 @@ aside{
     border-bottom-left-radius: 5px;
     border-right: none;
     height: 75%;
-    right: 0;
+    overflow: hidden;
+    right: -1px;
     width: 20%;
     min-width: 300px;
 }
@@ -194,6 +193,7 @@ figcaption{
 }
 .similar-species{
     border-bottom: 3px double #aaa;
+    padding-right: 19px;
 }
 .similar-species figcaption{
     font-size: 0.8em;
