@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 
 class NavBar extends Component {
   constructor(props) {
@@ -25,13 +26,13 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/search/">Search</NavLink>
+                <NavLink href="/search/"><FontAwesome name="search" /> Search</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/submit/">Submit Image</NavLink>
+                <NavLink href="/submit/"><FontAwesome name="binoculars" /> Identify</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/options/">Options</NavLink>
+                <NavLink href="/options/"><FontAwesome name="gear" /> Options</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
