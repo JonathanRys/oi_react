@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <header className="article-header">
-              <span className="common-name">{ this.props.commonName }</span>
+              <span className="common-name">{ this.props.commonName }</span> - 
               (<span className="binomial-name">{ this.props.binomialName }</span>)
             </header>
         )
@@ -67,8 +67,8 @@ class SideBar extends Component {
                   <FontAwesome name={ this.state.isOpen? "chevron-right": "chevron-left" } />
                 </div>
                 <header className="side-bar-header">{ this.props.title }</header>
-                <div className="scroller">
-                    <div className="sidebar-container">
+                <div className="sidebar-container">
+                    <div className="scroller">
                         {
                             this.props.sections.map((section, key) => {
                             return (
