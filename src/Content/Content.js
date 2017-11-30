@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import { Header, Section, SideBar } from './Components';
+import { Header, Section, SideBar } from './Components'
 
-import { getData } from './datastub';
+import { getData } from './datastub'
 
-let organism = getData();
+let organism = getData()
 
 class Content extends Component {
-  render() {
+  render () {
     return (
       <article>
-        <Header { ...organism.header } />
-        <Section { ...organism.wiki } />
-        <SideBar { ...organism.similar } />
+        <Header {...organism.header} />
+        <Section {...organism.wiki} />
+        <SideBar {...organism.similar} />
       </article>
-    );
+    )
   }
 }
 
-export default Content;
+export default Content

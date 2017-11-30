@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 // Use react-router to handle client-side routing
-// wrap the app in a Router component
+// wrap the app in a Router with withRouter
 
-import NavBar from "../NavBar/NavBar"
-import Content from "../Content/Content"
+import NavBar from '../NavBar/NavBar'
+import Content from '../Content/Content'
 
-import "./App.css"
+import './App.css'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div>
-          <NavBar />
-          <Content />
+        <NavBar />
+        <Content />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
