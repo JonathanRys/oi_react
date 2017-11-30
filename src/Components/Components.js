@@ -53,8 +53,6 @@ class SideBar extends Component {
   constructor(props) {
     super(props)
 
-    console.log(this.props)
-
     this.state = { "isOpen": true }
   }
 
