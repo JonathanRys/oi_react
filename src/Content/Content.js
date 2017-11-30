@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Header, Section, SideBar } from './Components'
+import { Header, Section, SideBar } from '../Components/Components'
 
 import { getData } from './datastub'
 
