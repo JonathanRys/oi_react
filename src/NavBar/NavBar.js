@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 
-import { withRouter } from 'react-router-dom'
-
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +28,7 @@ class NavBar extends Component {
                 <NavLink href="/search"><FontAwesome name="search" /> Search</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/submit"><FontAwesome name="binoculars" /> Identify</NavLink>
+                <NavLink href="/identify"><FontAwesome name="binoculars" /> Identify</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/options"><FontAwesome name="gear" /> Options</NavLink>
@@ -43,4 +41,4 @@ class NavBar extends Component {
   }
 }
 
-export default withRouter(NavBar);
+export default NavBar;
