@@ -7,7 +7,6 @@ class NavBar extends Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-
     this.state = { isOpen: false, ...this.props }
   }
 
@@ -20,7 +19,7 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar style={{ backgroundColor: '#5494d5' }} light expand="md">
+        <Navbar className="app-header" light expand="md">
           <NavbarBrand href="/">Organism Identifier</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

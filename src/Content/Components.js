@@ -20,7 +20,7 @@ class Section extends Component {
           this.props.sections.map((section, key) => {
             return (
               <details key={`section-${key}`} className="section-head">
-                <summary>{section.sectionTitle}</summary>
+                <summary className="paragraphs">{section.sectionTitle}</summary>
                 {section.image ? <Image { ...section.image } /> : null}
                 {
                   section.paragraphs.map((paragraph, key) => {
@@ -43,7 +43,7 @@ class Image extends Component {
         <a href={this.props.href}>
           <img src={this.props.src} alt={this.props.alt} />
         </a>
-        <figcaption>{this.props.caption}</figcaption>
+        <figcaption className="image-caption">{this.props.caption}</figcaption>
       </figure>
     )
   }
@@ -53,7 +53,9 @@ class SideBar extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { "isOpen": !!this.props }
+    console.log(this.props)
+
+    this.state = { "isOpen": true }
   }
 
   toggle = () => {
@@ -62,7 +64,7 @@ class SideBar extends Component {
 
   render() {
     return (
-      <aside className="side-bar" style={this.state.isOpen ? { "width": "20%" } : { "width": "0%", "minWidth": "0px" }}>
+      <aside className={`side-bar ${this.state.isOpen ? "sidebar-open" : "sidebar-closed" }`}>
         <div onClick={this.toggle} className="tab" title={!this.state.isOpen ? this.props.title : null} >
           <FontAwesome name={this.state.isOpen ? "chevron-right" : "chevron-left"} />
         </div>
