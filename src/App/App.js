@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
-// Use react-router to handle client-side routing
-// wrap the app in a Router with withRouter
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import NavBar from '../NavBar/NavBar'
 import Content from '../Content/Content'
@@ -9,11 +8,13 @@ import Content from '../Content/Content'
 import './App.css'
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div>
         <NavBar />
-        <Content />
+        <Router>
+          <Route path="/" component={Content} />
+        </Router>
       </div>
     )
   }
