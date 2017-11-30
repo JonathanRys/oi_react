@@ -138,31 +138,7 @@ article .content-area{
     transition: width 0.5s;
     transition-timing-function: ease-in;
 }
-.side-bar{ 
-    top: 124px;
-    position: fixed;
-    transition: width 0.5s;
-    transition: min-width 0.5s;
-    transition-timing-function: ease-out;
-}
-.side-bar figure{
-    width: 100%;
-    margin: 10px;
-}
-.side-bar figure>a>img{
-    width: 100%;
-}
-.sidebar-container{
-    position: relative;
-    height: 100%;
-    padding-top: 33px;
-    margin-top: -33px;
-}
-.scroller{
-    overflow-y: scroll;
-    max-height: 100%;
 
-}
 header.side-bar-header{
     background: #ccc;
     border-bottom: 1px solid black;
@@ -171,17 +147,43 @@ header.side-bar-header{
     font-weight: bold;
     padding: 5px;
 }
-aside{
+.side-bar figure{
+    width: 100%;
+}
+.side-bar figure>a>img{
+    width: 100%;
+}
+.sidebar-container{
+    display: grid;
+    grid-template-columns: 10px auto;
+    grid-template-rows: 0px auto 3px;
+    position: relative;
+    height: 100%;
+    padding-top: 33px;
+    margin-top: -33px;
+}
+.scroller{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    overflow-y: scroll;
+    padding: 10px 0;
+    max-height: 100%;
+}
+.side-bar{
     background: white;
     border: 1px solid black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: none;
     height: 75%;
-    overflow: hidden;
     right: -1px;
     width: 20%;
     min-width: 300px;
+    top: 20%;
+    position: fixed;
+    transition: width 0.5s;
+    transition: min-width 0.5s;
+    transition-timing-function: ease-out;
 }
 figure{
     border: 1px solid black;
@@ -193,7 +195,7 @@ figcaption{
 }
 .similar-species{
     border-bottom: 3px double #aaa;
-    padding-right: 19px;
+    padding-right: 10px;
 }
 .similar-species figcaption{
     font-size: 0.8em;
@@ -220,7 +222,7 @@ figcaption{
     padding: 2px;
     position: absolute;
     right: 20%;
-    top: 160px;
+    top: 50%;
     width: 19px;
 }
 
