@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 
+import { withRouter } from 'react-router-dom'
+
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -25,13 +27,13 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/search/"><FontAwesome name="search" /> Search</NavLink>
+                <NavLink href="/search"><FontAwesome name="search" /> Search</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/submit/"><FontAwesome name="binoculars" /> Identify</NavLink>
+                <NavLink href="/submit"><FontAwesome name="binoculars" /> Identify</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/options/"><FontAwesome name="gear" /> Options</NavLink>
+                <NavLink href="/options"><FontAwesome name="gear" /> Options</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -41,4 +43,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);
