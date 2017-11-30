@@ -38,15 +38,13 @@ article .content-area{
     padding-left: 8px;
     text-indent: 20px;
 }
-/* add transition to details elements */
-details[open] summary ~ * 
-{
- animation: sweep .25s ease-in-out;
+/* add transitions to details elements */
+details[open] summary ~ *{
+    animation: details .25s ease-in-out;
 }
-@keyframes sweep 
-{
- 0%    {opacity: 0; margin-top: -5px}
- 100%  {opacity: 1; margin-top: 0px}
+@keyframes details{
+    0%    {opacity: 0; margin-top: -5px}
+    100%  {opacity: 1; margin-top: 0px}
 }
 details p:last-child{
     margin-bottom: 40px;
@@ -83,7 +81,7 @@ details p:last-child{
 }
 
 /* SideBar */
-header.side-bar-header{
+header.sidebar-header{
     background: #ccc;
     border-bottom: 1px solid black;
     border-top-left-radius: inherit;
@@ -91,10 +89,10 @@ header.side-bar-header{
     font-weight: bold;
     padding: 5px;
 }
-.side-bar figure{
+.sidebar figure{
     width: 100%;
 }
-.side-bar figure>a>img{
+.sidebar figure>a>img{
     width: 100%;
 }
 .sidebar-open {
@@ -105,7 +103,7 @@ header.side-bar-header{
     width: 0%;
     min-width: 0px;
 }
-.side-bar{
+.sidebar{
     background: white;
     border: 1px solid black;
     border-top-left-radius: 5px;
